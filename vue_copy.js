@@ -60,7 +60,7 @@ Vue.component('add',{
         }
     },
     template: "<button id='addBtn' v-on:click='addDisplay()'>egh</button>"
-})
+});
 //there must be some way to dynamically create log instances
 Vue.component('log',{
     props:{
@@ -84,7 +84,7 @@ Vue.component('log',{
         }
     },
  //   template: "<div class='logMember' v-on:click='displayContent()'>Testing</div>"
-    template: "<div class='logMember'>Testing</div>"
+    template: "<div class='logMember'>t</div>"
 })
 var vue = new Vue({
     el: "#main",
