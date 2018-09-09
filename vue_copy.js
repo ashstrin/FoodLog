@@ -69,7 +69,7 @@ Vue.component('log',{
       content: String
     },
     mounted(){
-        this.displayContent()
+  //     this.displayContent()
     },
     methods: {
     //on click, reveal additional information about entry from DB

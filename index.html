@@ -22,7 +22,7 @@ var box = [[1, 1, 1],[1, 0, 1],[1,1,1]]
 
 <div id="main">
 	<div v-for="entry in food_entries">
-	<div>{{entry.date}}</div>
+	<div>{{entry}}</div>
 	<log v-bind:entryID=entry.id v-on:click='displayContent()'></log>
 	</div>
 	<add></add>
@@ -33,6 +33,7 @@ var box = [[1, 1, 1],[1, 0, 1],[1,1,1]]
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 <script src="vue_copy.js"></script>
 <!--<script src="practice_indexeddb.js"></script>-->
-<script src="mysql.js"></script>
+<!--<script src="mysql.js"></script>-->
+<script src="bundle.js"></script>
 </body>
 </html>
