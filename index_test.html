@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<div>Greetings</div>
+	<div id="main">
+		<button v-on:click="getFullDB()">Press for full DB</button>
+		<div v-for="entry in food_entries">
+				<log v-bind:id="entry.id" v-bind:date="entry.date" v-bind:content="entry.content"></log>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<script src="foodlog.js"></script>
+</body>
+</html>

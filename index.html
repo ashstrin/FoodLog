@@ -22,17 +22,20 @@ var box = [[1, 1, 1],[1, 0, 1],[1,1,1]]
 
 <div id="main">
 	<div v-for="entry in food_entries">
-	<div>{{entry}}</div>
-	<log v-bind:entryID=entry.id v-on:click='displayContent()'></log>
+	<div>{{entry.name}}</div>
+	<log v-bind:entry_id="entry.id" v-bind:entry_date="entry.name" v-bind:content="entry.content" v-on:click='displayContent()'></log>
 	</div>
 	<add></add>
 	<button onclick="vue.getDB()">getDB</button>
-	<button onclick="vue.addEntry(entry = {id:'03'})">Add</button>
+	<button onclick="vue.addEntry(entry = {id:'03', date:'03-01-2017'})">Add</button>
 </div>
-<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>-->
+<!--<script src="bundlevue.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 <script src="vue_copy.js"></script>
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="vue_copy.js"></script>-->
 <!--<script src="bundleVue.js"></script>-->
 <!--<script src="practice_indexeddb.js"></script>-->
 <!--<script src="mysql.js"></script>-->
