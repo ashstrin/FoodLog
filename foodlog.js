@@ -39,20 +39,27 @@ Vue.component('add', {
 		return {
 			id: String,
 			date: String,
-			content: String
+			content: String,
+			mainDiv: document.getElementById('main')
 		}
 	},
 	methods: {
+		displayForm: function(){
+			var form = "<div>"
+				+ "<form action='' method=''>"
+				+ "<input type='text'>"
+				+ "</form>"
+				+ "</div>";
+			mainDiv.innerHTML = form;
+			
+		},
 		addEntry: function(){
 			
 		}
-	}
+	},
+	template: "<div></div>"
 })
 */
-Vue.component('add',{
-	
-	
-})
 Vue.component('log',{
 	props:{
 		id: String,
