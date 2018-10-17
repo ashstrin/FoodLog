@@ -4,7 +4,8 @@
   "description": "",
   "main": "vue_copy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify foodlog.js > dist/bundle.js"
   },
   "repository": {
     "type": "git",
